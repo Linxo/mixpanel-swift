@@ -10,10 +10,6 @@ import XCTest
 @testable import Mixpanel
 
 class MixpanelOptOutTests: MixpanelBaseTests {
-    func randomId() -> String
-    {
-        return String(format: "%08x%08x", arc4random(), arc4random())
-    }
     
     func testHasOptOutTrackingFlagBeingSetProperlyAfterInitializedWithOptedOutYES()
     {
@@ -255,8 +251,7 @@ class MixpanelOptOutTests: MixpanelBaseTests {
             mixpanel.track(event: "event \(i)")
         }
         waitForMixpanelQueues()
-        //There will be an additional event for '$opt_in'
-        XCTAssertTrue(mixpanel.eventsQueue.count == 51, "When opted in, events should have been queued")
+        XCTAssertTrue(mixpanel.eventsQueue.count > 50, "When opted in, events should have been queued")
         XCTAssertEqual(mixpanel.eventsQueue.first!["event"] as? String, "$opt_in", "incorrect optin event name")
 
         mixpanel.optOutTracking()
@@ -307,7 +302,7 @@ class MixpanelOptOutTests: MixpanelBaseTests {
             mixpanel.track(event: "event \(i)")
         }
         waitForTrackingQueue()
-        XCTAssertTrue(mixpanel.eventsQueue.count == 51, "When opted in, events should have been queued")
+        XCTAssertTrue(mixpanel.eventsQueue.count > 50, "When opted in, events should have been queued")
 
         let eventsQueue = mixpanel.eventsQueue
         mixpanel.optOutTracking()
@@ -317,6 +312,6 @@ class MixpanelOptOutTests: MixpanelBaseTests {
         mixpanel.eventsQueue = eventsQueue
         mixpanel.flush()
         waitForMixpanelQueues()
-        XCTAssertTrue(mixpanel.eventsQueue.count == 51, "When opted out, events should not be flushed")
+        XCTAssertTrue(mixpanel.eventsQueue.count > 50, "When opted out, events should not be flushed")
     }
 }

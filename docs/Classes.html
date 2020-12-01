@@ -10,10 +10,11 @@
     
   </head>
   <body>
+    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Mixpanel Docs</a> (91% documented)</p>
+        <p><a href="index.html">Mixpanel 2.8.1 Docs</a> (66% documented)</p>
         <p class="header-right"><a href="https://github.com/mixpanel/mixpanel-swift"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -38,6 +39,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/MixpanelInstance.html">MixpanelInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MixpanelNotificationServiceExtension.html">MixpanelNotificationServiceExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MixpanelPushNotifications.html">MixpanelPushNotifications</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/People.html">People</a>
@@ -68,7 +75,16 @@
                 <a href="Extensions/CGFloat.html">CGFloat</a>
               </li>
               <li class="nav-group-task">
+                <a href="Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DateFormatter.html">DateFormatter</a>
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/Dictionary.html">Dictionary</a>
@@ -86,13 +102,34 @@
                 <a href="Extensions/NSNull.html">NSNull</a>
               </li>
               <li class="nav-group-task">
+                <a href="Extensions/NSNumber.html">NSNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Extensions/String.html">String</a>
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/UIColor.html">UIColor</a>
               </li>
               <li class="nav-group-task">
+                <a href="Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIResponder.html">UIResponder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Extensions/UInt.html">UInt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UNUserNotificationCenter.html">UNUserNotificationCenter</a>
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/URL.html">URL</a>
@@ -167,6 +204,63 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:8Mixpanel5GroupC"></a>
+                    <a name="//apple_ref/swift/Class/Group" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Mixpanel5GroupC">Group</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Access to the Mixpanel Groups API, available through the getGroup function from
+the main Mixpanel instance.</p>
+
+                        <a href="Classes/Group.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Group</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8MixpanelAAC"></a>
+                    <a name="//apple_ref/swift/Class/Mixpanel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8MixpanelAAC">Mixpanel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The primary class for integrating Mixpanel with your app.</p>
+
+                        <a href="Classes/Mixpanel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Mixpanel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:8Mixpanel0A8InstanceC"></a>
                     <a name="//apple_ref/swift/Class/MixpanelInstance" class="dashAnchor"></a>
                     <a class="token" href="#/s:8Mixpanel0A8InstanceC">MixpanelInstance</a>
@@ -185,17 +279,41 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MixpanelInstance</span><span class="p">:</span> <span class="kt">CustomDebugStringConvertible</span><span class="p">,</span> <span class="kt">FlushDelegate</span><span class="p">,</span> <span class="kt">AEDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MixpanelInstance</span> <span class="p">:</span> <span class="kt">CustomDebugStringConvertible</span><span class="p">,</span> <span class="kt">FlushDelegate</span><span class="p">,</span> <span class="kt">AEDelegate</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Mixpanel@objc(cs)MixpanelNotificationServiceExtension"></a>
+                    <a name="//apple_ref/swift/Class/MixpanelNotificationServiceExtension" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Mixpanel@objc(cs)MixpanelNotificationServiceExtension">MixpanelNotificationServiceExtension</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/MixpanelNotificationServiceExtension.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MixpanelNotificationServiceExtension</span> <span class="p">:</span> <span class="kt">UNNotificationServiceExtension</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -225,16 +343,12 @@ the main Mixpanel instance.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8Mixpanel5GroupC"></a>
-                    <a name="//apple_ref/swift/Class/Group" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8Mixpanel5GroupC">Group</a>
+                    <a name="/s:8Mixpanel0A17PushNotificationsC"></a>
+                    <a name="//apple_ref/swift/Class/MixpanelPushNotifications" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Mixpanel0A17PushNotificationsC">MixpanelPushNotifications</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -242,26 +356,21 @@ the main Mixpanel instance.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Access to the Mixpanel Groups API, available through the getGroup function from
-the main Mixpanel instance.</p>
+                        <p>Undocumented</p>
 
-                        <a href="Classes/Group.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/MixpanelPushNotifications.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Group</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MixpanelPushNotifications</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -291,43 +400,11 @@ the main Mixpanel instance.</p>
                 </li>
               </ul>
             </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8MixpanelAAC"></a>
-                    <a name="//apple_ref/swift/Class/Mixpanel" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8MixpanelAAC">Mixpanel</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The primary class for integrating Mixpanel with your app.</p>
-
-                        <a href="Classes/Mixpanel.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Mixpanel</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="http://mixpanel.com" target="_blank" rel="external">Mixpanel</a>. All rights reserved. (Last updated: 2019-08-19)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="http://mixpanel.com" target="_blank" rel="external">Mixpanel</a>. All rights reserved. (Last updated: 2020-11-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
